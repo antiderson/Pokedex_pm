@@ -1,0 +1,39 @@
+.cont {
+    margin-top: 30px;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info {
+    font-family: 'Karla';
+    margin-top: 3%;
+    /* background-color: red; */
+    margin-left: 14%;
+}
+
+.title {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 84px;
+}
+
+.banner {
+    /* width: 793px;
+    height: 680px; */
+    width: 850px;
+    height: 800px;
+}
+
+.sub{
+    margin-top: 10%;
+    font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+}
