@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Header } from '../../components/Header';
-import styles from './index.module.css';
 import './styles1.css';
 
 import { Button, Checkbox, Menu, MenuButton, MenuItem, MenuList, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, Progress, SimpleGrid } from '@chakra-ui/react';
@@ -13,27 +12,27 @@ type PokemonType = {
     url: string;
 };
 
-function getTypeClass(types: string[]) {
-    const typeClasses: { [key: string]: string } = {
-        grass: styles.modal_body_container_green,
-        bug: styles.modal_body_container_green,
-        dark: styles.modal_body_container_gray,
-        rock: styles.modal_body_container_gray,
-        ice: styles.modal_body_container_blue,
-        water: styles.modal_body_container_blue,
-        fire: styles.modal_body_container_red,
-        fighting: styles.modal_body_container_red,
-        dragon: styles.modal_body_container_red,
-        normal: styles.modal_body_container_light_blue,
-        ghost: styles.modal_body_container_light_blue,
-        poison: styles.modal_body_container_purple,
-        psychic: styles.modal_body_container_purple,
-        fairy: styles.modal_body_container_purple,
-        ground: styles.modal_body_container_brown,
-    };
+// function getTypeClass(types: string[]) {
+//     const typeClasses: { [key: string]: string } = {
+//         grass: styles.modal_body_container_green,
+//         bug: styles.modal_body_container_green,
+//         dark: styles.modal_body_container_gray,
+//         rock: styles.modal_body_container_gray,
+//         ice: styles.modal_body_container_blue,
+//         water: styles.modal_body_container_blue,
+//         fire: styles.modal_body_container_red,
+//         fighting: styles.modal_body_container_red,
+//         dragon: styles.modal_body_container_red,
+//         normal: styles.modal_body_container_light_blue,
+//         ghost: styles.modal_body_container_light_blue,
+//         poison: styles.modal_body_container_purple,
+//         psychic: styles.modal_body_container_purple,
+//         fairy: styles.modal_body_container_purple,
+//         ground: styles.modal_body_container_brown,
+//     };
 
-    return types.map(type => typeClasses[type]).join(' ');
-}
+//     return types.map(type => typeClasses[type]).join(' ');
+// }
 const PAGE_SIZE = 9;
 
 export const Pokedex = () => {
@@ -45,7 +44,7 @@ export const Pokedex = () => {
     const [loading, setLoading] = useState<boolean>(false);
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
     const [selectedPokemon, setSelectedPokemon] = useState<PokemonTypeProps | null>(null);
-    const [searchValue, setSearchValue] = useState('')
+    const [searchValue] = useState('')
 
     useEffect(() => {
         const fetchPokemonList = async () => {
