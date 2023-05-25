@@ -1,5 +1,7 @@
+import { Header } from "../../components/Header"
+
 export const Legendaries = () => {
     return (
-        <h1>Legendaries</h1>
+        <><Header /><h1>Legendaries</h1></>
     )
 }

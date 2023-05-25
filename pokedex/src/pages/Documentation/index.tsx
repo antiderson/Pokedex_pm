@@ -1,5 +1,9 @@
+import { Header } from "../../components/Header"
+
 export const Documentation = () => {
     return (
-        <h1>Documentation</h1>
+        <><Header /><h1>
+            Documentation
+        </h1></>
     )
 }
