@@ -1,0 +1,56 @@
+.card {
+    background: #F6F7F9;
+    border-radius: 8px;
+    /* transform: rotate(-180deg); */
+    width: 352px;
+    height: 153px;
+    margin-top: 20px;
+    filter: drop-shadow(4px 4px 4px rgba(8, 8, 8, 0.1));
+}
+
+.container {
+    display: flex;
+    gap: 18px;
+}
+
+span {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #212121;
+}
+
+
+
+.name {
+    font-family: 'Karla' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    color: #212121 !important;
+    /* color : red; */
+    text-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1) !important;
+    margin-bottom: 13px !important;
+    text-transform: capitalize;
+}
+
+
+.img {
+    width: 157px;
+}
+
+.body {
+    position: relative;
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .card {
+        flex-direction: row !important;
+        margin-bottom: 24px;
+    }
+
+}

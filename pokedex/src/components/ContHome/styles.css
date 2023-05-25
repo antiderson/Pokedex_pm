@@ -1,6 +1,11 @@
-.cont {
+
+
+ .cont {
+
     margin-top: 20px;
-}
+
+    background-color: #F5DB13;
+} 
 
 .column {
     display: flex;
