@@ -16,7 +16,7 @@ export const ContHome = () => {
                         its strengths, disadvantages and<br></br>
                         abilities
                     </h2>
-                    <Link to="/Documentation">
+                    <Link to="/Pokedex">
                         <button className='btn'>See Pokemons</button>
                     </Link>
                 </div>
