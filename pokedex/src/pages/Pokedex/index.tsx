@@ -58,9 +58,9 @@ export const Pokedex = () => {
 
            
 
-            interface TypeProps {
-                types: PokemonType[];
-            }
+            // interface TypeProps {
+            //     types: PokemonType[];
+            // }
 
             setLoading(true);
 
