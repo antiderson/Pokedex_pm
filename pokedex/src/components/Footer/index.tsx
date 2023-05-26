@@ -2,7 +2,7 @@ import './styles.css'
 
 export const Footer = () => {
     return (
-        <section className='cont'>
+        <section className='conteudo'>
             <div className='footer'>
                 <h3>
                     Make with &#128147; for the PokéSpartans team Platzi Master

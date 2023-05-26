@@ -10,6 +10,7 @@
 
 .container {
     display: flex;
+    flex-direction: row;
     gap: 18px;
 }
 
@@ -18,10 +19,24 @@ span {
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    color: #212121;
+    /* color: #212121; */
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.atributos {
+    border: 3px solid #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 36px;
+    border-radius: 100px;
+}
 
 .name {
     font-family: 'Karla' !important;
@@ -35,22 +50,40 @@ span {
     text-transform: capitalize;
 }
 
+.tipo {
+    display: flex;
+    gap: 14px;
+    margin-top: 11px;
+    position: absolute;
+}
+
+p {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #4B4B4B;
+    margin-top: 6px;
+}
 
 .img {
     width: 157px;
 }
 
-.body {
+.into {
     position: relative;
 
 }
 
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
 
     .card {
         flex-direction: row !important;
         margin-bottom: 24px;
     }
 
-}
+} */

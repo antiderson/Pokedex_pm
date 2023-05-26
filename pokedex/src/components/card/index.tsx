@@ -48,25 +48,25 @@ export const CardPokemon: React.FC<CardPokemonProps> = ({ name, attack, defense,
     return (
         <Card className="card" direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline' onClick={onClick}>
             <Stack>
-                <CardBody className="body">
+                <CardBody className="into">
                     <Heading className="name">{name}</Heading>
                     <article className="container">
-                        <article className={styles.stats_column}>
-                            <div className={styles.stats}>
+                        <article className="column">
+                            <div className="atributos">
                                 <span>{attack}</span>
                             </div>
                             <p>Attack</p>
                         </article>
 
-                        <article className={styles.stats_column}>
-                            <div className={styles.stats}>
+                        <article className="column">
+                            <div className="atributos">
                                 <span>{defense}</span>
                             </div>
                             <p>Defense</p>
                         </article>
                     </article>
 
-                    <article className={styles.types_container}>
+                    <article className="tipos">
                         {types.map((type, index) => (
                             <Element key={index} type={[type]} />
                         ))}

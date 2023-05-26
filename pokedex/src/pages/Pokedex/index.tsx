@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Header } from '../../components/Header';
-import './styles1.css';
+import  './styles.css';
 
 import { Button, Checkbox, Menu, MenuButton, MenuItem, MenuList, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, Progress, SimpleGrid } from '@chakra-ui/react';
 import api from '../../api/index';
 import { CardPokemon, PokemonTypeProps } from '../../components/card';
 import { Element } from '../../utils/Element';
+
+
 
 type PokemonType = {
     name: string;
@@ -51,6 +53,13 @@ export const Pokedex = () => {
             if (searchValue.trim() === '') {
                 setPokemonSearchList([])
                 return;
+            }
+
+
+           
+
+            interface TypeProps {
+                types: PokemonType[];
             }
 
             setLoading(true);
@@ -170,7 +179,7 @@ export const Pokedex = () => {
                         800 <strong>Pokemons</strong> for you to choose your favorite
                     </h1>
                     <input className='input' placeholder="Encontre o seu pokemon" />
-                    <div style={{ height: '80%' }}>
+                    
                         <div className='tipo'>
                             <Menu closeOnSelect={false}>
                                 <MenuButton as={Button} >
@@ -203,48 +212,49 @@ export const Pokedex = () => {
                                 Carregar mais
                             </Button>
                         )}
-                    </div>
+                    
 
                 </main>
             </section>
 
             //modal aqui /////////
 
-            <Modal size={'xl'} isCentered isOpen={isModalOpen} onClose={handleCloseModal}>
+            <Modal isCentered isOpen={isModalOpen} onClose={handleCloseModal}>
                 <ModalOverlay />
                 <ModalContent className="modal">
                     <ModalCloseButton className="modalX" />
 
                     {selectedPokemon && (
                         <>
-                            <ModalBody py={0} px={0}>
-                                <section >
-                                    <article>
+                            <ModalBody  py={0} px={0}>
+                                <section className='modal' >
+                                    <article className='corpo'> 
+                                        {/* aqui escolhe a cor do modal de acordo com o elemento do pok */}
                                         <img src={selectedPokemon.image} alt={selectedPokemon.name} />
-                                        <article >
+                                        <article className='element' >
                                             {selectedPokemon.types.map((type, index) => (
                                                 <Element key={index} type={[type]} />
                                             ))}
                                         </article>
                                     </article>
 
-                                    <article>
-                                        <article>
+                                    <article className='infoCont'>
+                                        <article className='cabecalho'>
                                             <h2 >{selectedPokemon.name}</h2>
-                                            <article>
-                                                <span >Generation {selectedPokemon.generation}</span>
-                                                <div>
+                                            <article className='generetion'>
+                                                <span className='generation2'>Generation {selectedPokemon.generation}</span>
+                                                <div className='index'>
                                                     <span>{selectedPokemon.index}</span>
                                                 </div>
                                             </article>
                                         </article>
 
                                         <article className="abilidades">
-                                            <span >Abilities</span>
+                                            <span className='titulo' >Abilities</span>
                                             <span>{selectedPokemon.abilities && selectedPokemon.abilities.join(" - ")}</span>
                                         </article>
 
-                                        <article>
+                                        <article className='contAtributos'>
                                             <article>
                                                 <span>Hp</span>
                                                 <span><strong>{selectedPokemon.hp}</strong></span>

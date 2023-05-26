@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 import Banner from '../../assets/Banner.png'
 import './styles.css'
+import { Footer } from '../Footer'
 
 export const ContHome = () => {
     return (
         <section className='cont'>
-            <div className='column'>
+            <div className='coluna'>
                 <div className='info'>
                     <h1 className='title'>
                         <strong>Find</strong> all your<br></br>
@@ -24,6 +25,7 @@ export const ContHome = () => {
                     <img src={Banner} className='banner' alt="" />
                 </div>
             </div>
+            <Footer />
         </section>
     )
 }

@@ -1,3 +1,7 @@
+.conteudo{
+    background-color: #F5DB13;
+}
+
 .footer {
     display: flex;
     flex-direction: row;

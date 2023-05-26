@@ -1,5 +1,4 @@
 import { ContHome } from "../../components/ContHome"
-import { Footer } from "../../components/Footer"
 import { Header } from "../../components/Header"
 import './styles.css'
 
@@ -9,7 +8,7 @@ export default function Home() {
         <>
             <Header />
             <ContHome />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

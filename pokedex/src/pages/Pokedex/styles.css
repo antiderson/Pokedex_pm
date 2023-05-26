@@ -1,0 +1,247 @@
+.cards {
+    /* align-items: center; */
+    justify-content: center;
+    /* background-color: red; */
+    display: flex;
+    gap: 18px;
+    margin-top: 3%;
+    height: 80vh;
+
+
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 93px);
+    background: #FFFFFF;
+    padding-top: 73px;
+
+
+}
+
+.content {
+    /* background-color: blue; */
+    width: 70%;
+    height: 100%;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.input {
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(33, 33, 33, 0.8);
+    margin: auto;
+
+    margin-top: 25px;
+    display: flex;
+    border-radius: 11px;
+    border: none;
+    width: 80%;
+    height: 35px;
+    box-shadow: 4px 4px 16px rgba(1, 28, 64, 0.2);
+
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    border-radius: 16px !important;
+}
+
+.generetion{
+    display: flex;
+        align-items: center;
+        gap: 8px;
+}
+
+.element {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.tipo {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.more {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #F5DB13;
+}
+
+h1 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+
+    text-align: center;
+    letter-spacing: 3px;
+
+    color: #000000;
+}
+
+.corpo {
+    background-color: #25241b79;
+}
+
+h2 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: capitalize;
+    color: #FDFDFD;
+    text-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
+}
+
+.modal {
+    background: transparent !important;
+    border-radius: 16px;
+    max-width: 800px !important;
+}
+.contAtributos{
+    
+}
+
+.infoCont {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.modalX {
+    position: absolute !important;
+    top: -40px !important;
+    right: 0 !important;
+    font-size: 24px !important;
+}
+
+
+.modal_image_container_red {
+    width: 364px;
+    background: linear-gradient(270deg, #B33327 0.15%, #D93E30 100%);
+    border-radius: 16px 0 0 16px;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 14px;
+
+}
+
+.modal_image_container_purple {
+    width: 364px;
+    background: linear-gradient(270deg, #9D80B4 0.15%, #A974BC 100%);
+    border-radius: 16px 0 0 16px;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 14px;
+
+}
+
+.modal_image_container_brown {
+    width: 364px;
+    background: linear-gradient(270deg, #9B897B 0.15%, #ac9480 100%);
+    border-radius: 16px 0 0 16px;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 14px;
+
+}
+
+
+
+
+.modalCinza {
+    background: linear-gradient(180deg, #6B6B6B 42.19%, #A1A1A1 100%);
+    border-radius: 16px;
+}
+
+.cabecalho {
+    display: flex;
+    gap: 56px;
+}
+
+.abilidades {
+    background: #FDFDFD;
+    box-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
+    border-radius: 8px;
+    width: 264px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 28px;
+    width: 400px;
+    height: 100px;
+}
+
+.generation2{
+    width: 129px;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #FDFDFD;
+}
+
+.index{
+    background: #F2CB07;
+        width: 41px;
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+}
+
+.abilidades span {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: start;
+    color: #000000;
+    width: 222px;
+}
+
+.titulo {
+    font-family: 'Karla' !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 31px !important;
+    line-height: 36px !important;
+    color: #000000;
+}
+
+.imagem {
+    width: 316px;
+}
+
+.container {
+    flex-direction: column;
+}

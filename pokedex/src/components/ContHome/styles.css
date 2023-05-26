@@ -1,13 +1,9 @@
-
-
- .cont {
-
-    margin-top: 20px;
-
+.cont {
+    height: 90vh;
     background-color: #F5DB13;
 } 
 
-.column {
+.coluna {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,7 +12,6 @@
 .info {
     font-family: 'Karla';
     margin-top: 3%;
-    /* background-color: red; */
     margin-left: 14%;
 }
 
@@ -29,8 +24,6 @@
 }
 
 .banner {
-    /* width: 793px;
-    height: 680px; */
     width: 850px;
     height: 800px;
 }
